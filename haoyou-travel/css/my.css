@@ -1,0 +1,44 @@
+ /*  my.css  */
+*{margin: 0;padding: 0;}
+#content{
+	width: 500px; 
+	height:246px;
+	/*border:2px solid;*/
+	overflow: hidden;
+	border-radius: 3px;
+	margin-left: 66px;
+}
+
+#list{
+	width: 500px;height: 250px;  background: #333;position: relative;
+}
+#list img{float:left; width: 500px;height: 250px;} 
+ /*也可利用bottom和left控制绝对位置*/
+ #buttons { position: absolute; height: 10px; width: 100px; z-index: 1; bottom: 20px; left:240px;}
+ /*Z-index 仅能在定位元素上奏效（例如position:absolute;）*/
+        /*鼠标形态cursor  */
+#buttons span{float: left; cursor:pointer; border: 1px solid white;
+                border-radius: 50%;  /*边角半径宽度的一半，即设置四周border样式为圆角*/
+               background: white; margin-right: 5px; 
+               width: 10px; height: 10px;}
+
+#buttons .on{background: #0996A2;}
+
+.arrow{cursor: pointer;
+		 display: none;
+		  line-height: 36px; /*改变键头位置*/
+		  position: absolute; 
+		  z-index: 2; top:110px; left: 500px;
+		  width: 40px; height: 40px; 
+		  background-color:RGBA(0,0,0,0.3); 
+		  font-weight: bold;
+          font-size: 36px; color:#fff;text-decoration: none;text-align: center; }
+              /*alpha是不透明参数数字越大，表示越不透明*/
+
+         /*调颜色和透明度，其后面的.7是设置透明度*/
+         /*鼠标移动到内容区显示箭头*/
+.arrow:hover{cursor: pointer; background-color:rgba(0,0,0,.7); }
+
+#content:hover .arrow{display: block;}
+#prev{left: 20px;}
+#next{right:20px;}

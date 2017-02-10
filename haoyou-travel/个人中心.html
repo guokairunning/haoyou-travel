@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>个人中心</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/only_style.css" rel='stylesheet' type='text/css' />
+<script src="js/bootstrap.js"></script>
+<script src="js/ssi-uploader.js"></script>
+<script src="js/four.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+		<!-- 导航 -->
+	<div class="header" id="home">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="主页.html" class="hvr-bounce-to-top">主页<span class="sr-only">(current)</span></a></li>
+					<li><a href="raiders.html" class="hvr-bounce-to-top">旅游攻略</a></li>
+					<li><a href="introduce.html" class="hvr-bounce-to-top">景点介绍</a></li>
+					<li><a href="个人中心.html" class="hvr-bounce-to-top">个人中心</a></li>
+					<li><a href="chatroom.html" class="hvr-bounce-to-top">在线交流</a></li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+			</div>
+		</nav>
+	</div>
+	
+	<!-- 内容 -->
+	<div class="user_name">
+		<div id="infor">
+			<h2 id="user_na">明日天涯</h2>
+		</div>
+		<div class="user_infor">
+			<h3>主人寄语</h3>
+			<p id="jiyu">&nbsp;&nbsp;&nbsp;&nbsp;相传 古老的东北大地上有一条龙他的名字叫黑龙刚出生就被斩了尾四处游荡无家归听说北方江水白龙作怪蹭蹭蹭去交了战结果大败逃了难乡亲们 石灰石头整制齐扛的扛 挑的挑 扔..</p>
+			<textarea name="textarea" id="mytxt" cols="105" rows="3" style="display:none;"></textarea>
+			<input type="button" value="确认" id="give" style="display:none;"></input>
+			<input type="button" value="设置" id="change_infor"></input>
+		</div>
+	</div>
+
+	<div class="strver">
+		<h3>我的足迹 </h3><span>以吾之路，丈物之幕；以吾之名，会物之姿。</span>
+		<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;老的东北大地上有一条龙他的名字叫黑龙刚出生就被斩了尾四处游荡无家归听说北方江水白龙作怪蹭蹭蹭去交了战结果大败逃了难乡亲们 石灰石头整制齐扛的扛 挑的挑</h5>
+		<ul id="oul">
+			<li>
+				<div class="poor poor_1" id="poor1">
+					<p id="dis">巴厘岛一日游</p>
+					<textarea name="textarea" cols="33" id = "mytxt1" rows="3"  style="display: none;"></textarea>
+			        <input type="button" value="确认" id="give1" style="display: none;"></input>
+				</div>
+				<input type="button" id="dis_but" value="设置相册描述" ></input>
+				<input type="button" id="gone" value="进入相册" ></input>
+			</li>
+			<li>
+				<div class="poor poor_2" id="poor2">
+					<p id="dis">九寨沟五日游</p>
+					<textarea name="textarea" cols="33" rows="3" id = "mytxt1"  style="display: none;"></textarea>
+			        <input type="button" value="确认" id = "give1"  style="display: none;"></input>
+					
+				</div>
+				<input type="button" id="dis_but" value="设置相册描述"></input>
+				<input type="button" id="gone" value="进入相册"></input>
+			</li>
+			<li>
+				<div class="poor poor_3" id="poor3">
+					<p id="dis">黎平森林公园两日游</p>
+					<textarea name="textarea" cols="33" rows="3" id = "mytxt1" style="display: none;"></textarea>
+			        <input type="button" value="确认"  id = "give1" style="display: none;"></input>
+					
+				</div>
+				<input type="button" id="dis_but" value="设置相册描述"></input>
+				<input type="button" id="gone" value="进入相册"></input>
+			</li>
+		</ul>
+		<ul id="oul2">
+			<li>
+				<div class="poor poor_4" id="poor4">
+					<p id="dis">拉萨一月之游</p>
+					<textarea name="textarea" cols="33" rows="3" id = "mytxt1" style="display: none;"></textarea>
+			        <input type="button" value="确认"  id = "give1" style="display: none;"></input>
+				</div>
+				<input type="button" id="dis_but" value="设置相册描述" ></input>
+				<input type="button" id="gone" value="进入相册"></input>
+			</li>
+			
+		</ul>
+		<div class="add_ce">
+			<a href="javascrtpt:;" id="add1"><img src="images/add.png" alt="添加新的相册"></a>
+		</div>
+
+
+		<div id="picture1" style="display: none;">
+				<a id="close" href="javasrcipt:;"><img src="images/backpic.png"></a>
+				<script type="text/javascript">
+					var pic = document.getElementById("picture1");
+					document.getElementById('close').onclick= function(){
+							pic.style.display="none";
+					}
+				</script>
+			<div class="htmleaf-container">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p>上传图片到相册：</p>
+							<input type="file" multiple id="ssi-upload3"/>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+
+
+
+
+	<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+	<script src="js/ssi-uploader.js"></script>
+	<script type="text/javascript">
+		$('#ssi-upload3').ssi_uploader({url:'#',dropZone:false,allowed:['jpg','gif','txt','png','pdf']});
+	</script>
+		<div class="diary">
+			<div class="add_dir">
+				<a href="javascrtpt:;" id="add2"><img src="images/addwen.png" alt="添加新的日记"></a>
+			</div>
+
+			<h3>我的旅游日记</h3><span>放下许久的疲惫，享受一次全身心的放松之旅吧~</span>
+
+			<ul id="ul3">
+				<li>
+					<div class="dir_img">
+						<img src="images/dir1.jpg">
+					</div>
+					<div class="dir_con">
+						<h4>第一篇：桂林山水甲天下</h4>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;推开房门，艳阳正娇，空气里满溢桂子清香，悠悠窜入鼻腔，惹人身心舒畅，我遂深吸口气，缓缓闭了眼。犹记那日也是兰桂齐芳，日丽风和，而她的命运似乎也是从那时起，天翻地覆，亦喜亦悲。然事已经年，那年的风雨犹如昨日，依然清晰映在脑中，久久不散。
+“小兰，将睡房的木椅搬去树下”我年已迈，站久便会头晕目眩，只得由年幼的婢子照看一二。
+“诺，麼麼”小兰毕恭毕敬照做。
+将我搀扶着躺下后，小兰便去做自己该做之事。我已至暮年，深居宫中五十年之久，如今只等一命呜呼，所以平常也尤为清闲，无事便晒晒太阳，将那年的风雨一遍一遍的说与后辈听。<br>
+（一）<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“今日天气如此娇，福晋何故总往宫里跑”我抬头望了望碧澈的青天，注视那张清丽无双的面孔，不解的开口询问。
+“小沁莫要多言，近日轮我入侍后妃，皇太后又不喜我，怎敢出现差错”福晋佯怒，拍了拍我头，笑的清浅温柔。
+我在心中哀叹，襄亲王常年带兵在外，留福晋深在闺中，着实不易，多往宫中走走，与那些个嫔妃聊聊天，总比一人待在硕大的府上要好。
+原以为今日也会按往常时辰回府，岂料途中竟遇了皇上，我吓坏了，不敢抬头，福晋似是也未料到，半晌都未说话。须臾，皇上将我等侍婢遣开，过了约莫两个时辰，福晋才喜言悦色的从御花园出来，走时还不住的回头，似是恋恋不舍。
+回府后，福晋总是魂不守舍的傻笑，看得我莫名其妙，却不敢多言，站在一旁，静静待着，想着只要福晋欢心便好。
+</p>
+						<div id="less_con" style="display: none;"><a href="#">收起>></a></div>
+					</div>
+					<div id="more_con">
+						<a href="#">......展开>></a>
+					</div>
+				</li>
+
+				<hr>
+				<li>
+					<div class="dir_img">
+						<img src="images/dir2.jpg">
+					</div>
+					<div class="dir_con">
+						<h4>第二篇：敦煌莫高窟</h4>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;推开房门，艳阳正娇，空气里满溢桂子清香，悠悠窜入鼻腔，惹人身心舒畅，我遂深吸口气，缓缓闭了眼。犹记那日也是兰桂齐芳，日丽风和，而她的命运似乎也是从那时起，天翻地覆，亦喜亦悲。然事已经年，那年的风雨犹如昨日，依然清晰映在脑中，久久不散。
+“小兰，将睡房的木椅搬去树下”我年已迈，站久便会头晕目眩，只得由年幼的婢子照看一二。
+“诺，麼麼”小兰毕恭毕敬照做。
+将我搀扶着躺下后，小兰便去做自己该做之事。我已至暮年，深居宫中五十年之久，如今只等一命呜呼，所以平常也尤为清闲，无事便晒晒太阳，将那年的风雨一遍一遍的说与后辈听。<br>
+（一）<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“今日天气如此娇，福晋何故总往宫里跑”我抬头望了望碧澈的青天，注视那张清丽无双的面孔，不解的开口询问。
+“小沁莫要多言，近日轮我入侍后妃，皇太后又不喜我，怎敢出现差错”福晋佯怒，拍了拍我头，笑的清浅温柔。
+我在心中哀叹，襄亲王常年带兵在外，留福晋深在闺中，着实不易，多往宫中走走，与那些个嫔妃聊聊天，总比一人待在硕大的府上要好。
+原以为今日也会按往常时辰回府，岂料途中竟遇了皇上，我吓坏了，不敢抬头，福晋似是也未料到，半晌都未说话。须臾，皇上将我等侍婢遣开，过了约莫两个时辰，福晋才喜言悦色的从御花园出来，走时还不住的回头，似是恋恋不舍。
+回府后，福晋总是魂不守舍的傻笑，看得我莫名其妙，却不敢多言，站在一旁，静静待着，想着只要福晋欢心便好。
+</p>
+						<div id="less_con" style="display: none;"><a href="#">收起>></a></div>
+					</div>
+					<div id="more_con">
+						<a href="#">......展开>></a>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+	
+	
+
+
+
+	<!-- 底部 -->
+	<div class="footer">
+            <div class="footer-top ">
+                    <ul>
+                        <li><a href="#"><img src="images/icon1.png" alt=""/></a></li>
+                        <li><a href="#"><img src="images/icon2.png" alt=""/></a></li>
+                        <li><a href="#"><img src="images/icon3.png" alt=""/></a></li>
+                        <li><a href="#"><img src="images/icon4.png" alt=""/></a></li>
+                    </ul>
+            </div>
+                <div class="bottom-menu ">
+                    <ul>
+		               <li><a href="主页.html">主页</a>&nbsp;&nbsp;</li>
+					    <li><a href="raiders.html">旅游攻略</a>&nbsp;&nbsp;</li>
+					  	<li><a href="introduce.html">景点介绍</a>&nbsp;&nbsp;</li>
+						<li><a href="个人中心.html">个人中心</a>&nbsp;&nbsp;</li>
+					   	<li><a href="chatroom.html">在线交流</a>&nbsp;&nbsp;</li>
+                    </ul>
+                </div>
+           <div class="buttom-wen ">
+         		<p>Copyright © 2016 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+     		</div>
+	</div>
+	<div class="scroll">
+				<a href="javascript:;" id="user_meg">某某</a>
+			<a href="#home" id="toTop" class="#" style="display: block;">
+			<span id="toTopHover" style="opacity: 1;"> </span></a>
+		 </div>
+		 <script type="text/javascript">
+		 	jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		 </script>
+	
+
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+	<title>旅游攻略</title>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="css/raiders.css">
+    <link rel="stylesheet" type="text/css" href="css/my.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/raiders.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/my.js"></script>
+    
+</head>
+<body>
+    <div class="header" id="home">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="主页.html" class="hvr-bounce-to-top">主页<span class="sr-only">(current)</span></a></li>
+          <li><a href="raiders.html" class="hvr-bounce-to-top">旅游攻略</a></li>
+          <li><a href="introduce.html" class="hvr-bounce-to-top">景点介绍</a></li>
+          <li><a href="个人中心.html" class="hvr-bounce-to-top">个人中心</a></li>
+          <li><a href="chatroom.html" class="hvr-bounce-to-top">在线交流</a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            </div>
+        </nav>
+    </div>
+    <div class="search_data">
+    <div class="introduce_pic">
+       <div id="content">
+            <div id="list" style="left:-500px;">
+                 <img src="img/5.jpg" alt="photo5" width="500px" height="250px">  
+                 <img src="img/1.jpg" alt="photo1" width="500px" height="250px">
+                 <img src="img/2.jpg" alt="photo2" width="500px" height="250px">
+                 <img src="img/3.jpg" alt="photo3" width="500px" height="250px">
+                 <img src="img/4.jpg" alt="photo4" width="500px" height="250px">
+                 <img src="img/5.jpg" alt="photo5" width="500px" height="250px">
+                 <img src="img/3.jpg" alt="s" width="500px" height="250px">
+                 <img src="img/1.jpg" alt="photo1" width="500px" height="250px">
+            </div>
+            <div id="buttons">
+                <span index="1" class="on"></span>
+                <span index="2"></span>
+                <span index="3"></span>
+                <span index="4"></span>
+                <span index="5"></span>
+                <span index="6"></span>
+            </div>
+            <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+            <a href="javascript:;" id="next" class="arrow">&gt;</a>
+
+        </div>
+    </div>
+    <div class="serch_form">
+         <form class="form-horizontal" action="" method="">
+                  <div class="control-group">
+                    <label class="control-label" style="color: black; margin-left: 20px;">出发地:</label>
+                    <select class="goal">
+                              <option>陕西省</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                   </select>
+                   <select class="goal">
+                              <option>西安市</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                   </select>
+                   
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" style="color: black; margin-left: 20px;">目的地:</label>
+                    <select class="goal">
+                              <option>四川省</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                   </select>
+                   <select class="goal">
+                              <option>成都市</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                   </select>
+                   
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" style="color: black; margin-left: 20px;">旅行时间:</label>
+                    <select class="goal" id="only">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                    </select>      
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" id="search_button" class="btn" style="margin-left: 20px;background-color: #0996A2;width: 120px;height: 50px;font-size: 19px;">攻略搜索
+                        </button>
+                    </div>
+                  </div>
+        </form>
+    </div>
+        
+   </div>
+    
+    <div class="search_reault">
+      <div class="des_pic">
+          <img src="img/despic.png" width="350px" height="350px">
+      </div>
+      <div class="result">
+                  <div class="best_one">
+                        <p>最佳路线推荐：</p>
+                        <div class="best_spot">
+                            <button class="btn">武侯祠--></button>
+                            <button class="btn">锦里--></button>
+                            <button class="btn">黄龙溪--></button>
+                            <button class="btn">文殊院--></button>
+                            <button class="btn">金沙遗址--></button>
+                            <button class="btn">杜甫祠堂--></button>
+                            <button class="btn">都江堰</button>
+                        </div>   
+                  </div>
+                  <div class="everyday">
+                        <span>详细路线:</span>
+                        <div class="all_lines">
+                            <ul>
+                                <li>第1天:武侯祠，锦里</li>
+                                <li>第2天:黄龙溪</li>
+                                <li>第3天:文殊院</li>
+                                <li>第4天:金沙遗址，杜甫祠堂</li>
+                                <li>第5天:都江堰</li>
+                            </ul>
+                        </div>            
+                 </div>
+       </div>
+      </div>
+      <div class="other_infor"> 
+           <h2>不可错过之美食：</h2> 
+           <div class="necess_food">
+               <ul>
+                   <li>
+                       <div class="li_div">
+                           <img src="img/food1.jpg" width="280px" height="210px">
+                           <p>土豆牛肉</p>
+                           <p>陶然居大饭店</p>
+                       </div>
+                   </li>
+                   <li>
+                       <div class="li_div">
+                           <img src="img/food2.jpg" width="280px" height="210px">
+                           <p>巧克力蛋糕</p>
+                           <p>陶然居大饭店</p>
+                       </div>
+                   </li>
+                   <li>
+                       <div class="li_div">
+                           <img src="img/food3.jpg" width="280px" height="210px">
+                           <p>巧克力蛋糕</p>
+                           <p>陶然居大饭店</p>
+                       </div>
+                   </li>
+                   <li>
+                       <div class="li_div">
+                           <img src="img/food4.jpg" width="280px" height="210px">
+                           <p>巧克力蛋糕</p>
+                           <p>陶然居大饭店</p>
+                       </div>  
+                   </li>
+               </ul>
+           </div>
+      </div>
+      <div class="other_infor"> 
+           <h2>不可错过之纪念品：</h2> 
+           <div class="necess_food">
+               <ul>
+                   <li>
+                       <div class="li_div">
+                           <img src="img/gift1.jpeg" width="280px" height="210px">
+                           <p>巧克力蛋糕</p>
+                           <p>陶然居大饭店</p>
+                       </div>
+                   </li>
+                   <li>
+                       <div class="li_div">
+                           <img src="img/gift2.jpg" width="280px" height="210px">
+                           <p>巧克力蛋糕</p>
+                           <p>陶然居大饭店</p>
+                       </div>
+                   </li>
+                   <li>
+                       <div class="li_div">
+                           <img src="img/gift3.jpg" width="280px" height="210px">
+                           <p>巧克力蛋糕</p>
+                           <p>陶然居大饭店</p>
+                       </div>
+                   </li>
+                   <li>
+                       <div class="li_div">
+                           <img src="img/gift4.jpg" width="280px" height="210px">
+                           <p>巧克力蛋糕</p>
+                           <p>陶然居大饭店</p>
+                       </div>  
+                   </li>
+               </ul>
+           </div>
+      </div>
+      <div class="about_text">
+          <h2>不可错过之精彩游记：</h2>
+          <div class="txt_list">
+              <ul>
+                  <li>第一篇</li>
+                  <li>第一篇</li>
+                  <li>第一篇</li>
+                  <li>第一篇</li>
+                  <li>第一篇</li>
+                  <li>第一篇</li>
+                  <li>第一篇</li>
+                  <li>第一篇</li>
+              </ul>
+          </div>
+          
+      </div>
+      
+  </div>
+
+<div class="footer">
+            <div class="footer-top ">
+                    <ul>
+                        <li><a href="#"><img src="images/icon1.png" alt=""/></a></li>
+                        <li><a href="#"><img src="images/icon2.png" alt=""/></a></li>
+                        <li><a href="#"><img src="images/icon3.png" alt=""/></a></li>
+                        <li><a href="#"><img src="images/icon4.png" alt=""/></a></li>
+                    </ul>
+            </div>
+                <div class="bottom-menu ">
+                    <ul>
+                    <li><a href="主页.html">主页</a>&nbsp;&nbsp;</li>
+              <li><a href="raiders.html">旅游攻略</a>&nbsp;&nbsp;</li>
+              <li><a href="introduce.html">景点介绍</a>&nbsp;&nbsp;</li>
+            <li><a href="个人中心.html">个人中心</a>&nbsp;&nbsp;</li>
+              <li><a href="chatroom.html">在线交流</a>&nbsp;&nbsp;</li>
+                    </ul>
+                </div>
+           <div class="buttom-wen ">
+            <p>Copyright © 2016 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+        </div>
+  </div>
+
+    <div class="scroll">
+      <a href="#home" id="toTop" class="#" style="display: block;">
+      <span id="toTopHover" style="opacity: 1;"> </span></a>
+     </div>
+     <script type="text/javascript">
+      
+     </script>
+     
+      <script type="text/javascript">
+            window.onload = function()
+            {
+                var content = document.getElementById('content');
+                var buttons = document.getElementById('buttons').getElementsByTagName('span');
+                var list = document.getElementById('list');
+                var prev = document.getElementById('prev');
+                var next = document.getElementById('next');
+                var Blen=document.getElementById('buttons');
+               
+                 Blen.style.width = (buttons.length*20) +'px';
+                
+                
+               var len = document.getElementById('list').getElementsByTagName('img').length;
+                var index = 1;
+                
+                var animated = false;
+                var interval = 3000;     //定义的定时器所执行的时间
+                var timer;
+                  list.style.width = (800*len) +'px'; 
+                 function animate (offset) {
+                if (offset == 0) {  // 对offset进行安全判断
+                    return;
+                }
+                animated = true;
+                var time = 500; //位移总时间
+                var inteval = 20;   //位移间隔时间
+                var speed = offset/(time/inteval);  //每次的位移量
+                var left = parseInt(list.style.left) + offset;  //定义left变量保存
+                   // 自动走动时的显示
+                var go = function (){
+
+                    if (speed > 0 && (parseInt(list.style.left) < left) ||
+                            (speed < 0 && parseInt(list.style.left) > left)) {
+                        list.style.left = parseInt(list.style.left) + speed + 'px';
+                        setTimeout(go, inteval);
+                    }
+                    else {
+                        list.style.left = left + 'px';
+
+                        if(left > -500){
+                            list.style.left = (-500 * (len-2)) + 'px';
+                        }
+
+                        if(left < (-500 * (len-2) ) ) {
+                            list.style.left = '-500px';
+                        }
+                        animated = false;
+                    }
+                }
+                go();
+              
+            }
+
+            // 图片的转动带动小圆点的转动函数实现
+            function showButton() {
+                for (var i = 0; i < buttons.length ; i++) {
+                    if( buttons[i].className == 'on'){
+                        buttons[i].className = '';
+                        break;
+                    }   //找到之前的on样式置空
+                }
+                buttons[index - 1].className = 'on';  //将此时索引值的class属性点亮
+                 //index - 1只是做对应的button处理
+            }
+            
+            //鼠标不操作时，自动轮播显示
+            function play() {
+                // timer = setTimeout(function () {
+                //     next.onclick();
+                //     play();
+                // }, interval);
+
+                timer = setInterval(function () {
+                  next.onclick();
+                }, interval);
+            }
+
+            function stop() {
+                clearTimeout(timer);
+            }
+            
+            //下一个按钮指示
+            next.onclick = function () {
+                if (animated) {
+                    return;
+                }
+                if (index == buttons.length) {
+                    index = 1;
+                }
+                else {
+                    index += 1;
+                }
+                animate(-500);
+                showButton();
+            }
+            
+            //前一个按钮指示
+            prev.onclick = function () {
+                if (animated) {   //  animated 为true时执行
+                    return;
+                }
+                if (index == 1) {
+                    index = buttons.length;
+                }
+                else {
+                    index -= 1;
+                }
+                animate(500);
+                showButton();
+            }
+            
+            // 圆框按钮做点击事件切换图片处理
+            // 每一个button都有一个点击事件
+
+            for (var i = 0; i < buttons.length; i++) 
+            {
+                buttons[i].onclick = function ()
+                 {
+                    if (animated) {
+                        return;
+                    }
+                    if(this.className == 'on') {
+                        return;
+                    }
+                     var myIndex = parseInt(this.getAttribute('index'));  // this.getAttribute方法获自定义点击时所指index的值
+                    var offset = -500 * (myIndex - index);
+
+                    animate(offset);
+                    index = myIndex;
+                    showButton();    //语句不可交换
+                 }
+            }
+
+            content.onmouseover = stop;
+            content.onmouseout = play;
+
+            play();   //自动播放
+
+        }
+        </script>
+</body>
+</html>

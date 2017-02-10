@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<script src="js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+<!-- <script src="js/jquery-2.1.1.min.js" ></script> -->
+</head>
+<body>
+
+<!-- 	登陆 -->
+
+	<div id="pul1" style="display: none;">
+         <div  id="user_log1" >
+                <div >
+                    <h2>用户登录</h2>
+                    <input type="image" id="img1_login" src="images/userlog.png" name="noL" />
+                </div>
+                <form method="post" id="myform" action="#" name="form1" onsubmit="return IsNull()">
+                    <label for="">
+                        <span>用户名：</span>
+                         <input type="text" name="email" placeholder="登录邮箱" required="required" onblur="isEmail(this.value)" />
+
+                         <SCRIPT type="text/javascript">
+                            function isEmail(strEmail) {
+                            if (strEmail.search(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/) != -1)
+                                return true;
+                            else
+                                alert("格式不对，重新输入!");
+                            }
+                            </SCRIPT>
+
+                    </label>
+                    <label for="">
+                        <span><br>密码：</span>
+                         <input type="password" name="password" id="user_psw" placeholder="密码" required="required"  />
+                        <!--  <br><div class="wordthree">*密码不能为空</div> -->
+                    </label>
+                    <br><input id="submit_login" type="submit" name="Submit" value="登录" / >
+                </form>
+        </div>
+      </div>
+	
+            <!-- 注册 -->
+      <div id="pul2" style="display: none;">
+        <div id="user_reg1" >
+            <div >
+                    <h3>用户注册</h3>
+                    <input type="image" id="img2_reg" src="images/userlog.png" name="noL" />
+                </div>
+            <form method="post" id="myform1" action="#" name="form2" onsubmit="return IsNull()">
+                <label for="">
+                    <span>用户名：</span>
+                     <input type="text" name="email" onblur="isEmail(this.value)" placeholder="登录邮箱"  class="val" />
+                </label>
+                <label for="">
+                <span><br>密码：</span>
+                     <input type="password" name="password" placeholder="密码" required="required" id="password" class="val password"/>
+                </label>
+                <label for="">
+                <span><br>确认密码：</span>
+                     <input type="password" name="re_password" placeholder="确认密码" required="required" class="val password1" />
+                </label> 
+                <label for="">
+                <span><br>昵称：</span>
+                     <input type="text" name="username" placeholder="昵称" required="required" id="username" class="val"/>
+                </label>
+                <br><input type="button" name="Submit" value="确认" id="stu_sub"/>
+            </form>
+        </div>
+      </div>
+
+	<!-- 内容 -->
+	<div class="header" id="home">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="主页.html" class="hvr-bounce-to-top">主页<span class="sr-only">(current)</span></a></li>
+					<li><a href="raiders.html" class="hvr-bounce-to-top">旅游攻略</a></li>
+					<li><a href="introduce.html" class="hvr-bounce-to-top">景点介绍</a></li>
+					<li><a href="个人中心.html" class="hvr-bounce-to-top">个人中心</a></li>
+					<li><a href="chatroom.html" class="hvr-bounce-to-top">在线交流</a></li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+			</div>
+		</nav>
+	</div>
+
+	<!-- 轮播图 -->
+	<div class="htmleaf-container">
+		<div class="container">
+			<input type="radio" name="slides" id="slide1" checked>
+			<input type="radio" name="slides" id="slide2">
+			<input type="radio" name="slides" id="slide3">
+			<input type="radio" name="slides" id="slide4">
+			<input type="radio" name="slides" id="slide5">
+			<input type="radio" name="slides" id="slide6">
+			
+			<div class="slider">
+				<div class="captions">
+					<div class="c1">巴厘岛</div>
+					<div class="c2">九寨沟</div>
+					<div class="c3">张家界</div>
+					<div class="c4">杭州西湖</div>
+					<div class="c5">桂林山水</div>
+					<div class="c6">东煌莫高窟</div>
+				</div>
+				<div class="img img1">
+					<div class="frag frag1"></div>
+					<div class="frag frag2"></div>
+					<div class="frag frag3"></div>
+					<div class="frag frag4"></div>
+					<div class="frag frag5"></div>
+					<div class="frag frag6"></div>
+				</div>
+				<div class="img img2">
+					<div class="frag frag1"></div>
+					<div class="frag frag2"></div>
+					<div class="frag frag3"></div>
+					<div class="frag frag4"></div>
+					<div class="frag frag5"></div>
+					<div class="frag frag6"></div>
+				</div>
+				<div class="img img3">
+					<div class="frag frag1"></div>
+					<div class="frag frag2"></div>
+					<div class="frag frag3"></div>
+					<div class="frag frag4"></div>
+					<div class="frag frag5"></div>
+					<div class="frag frag6"></div>
+				</div>
+				<div class="img img4">
+					<div class="frag frag1"></div>
+					<div class="frag frag2"></div>
+					<div class="frag frag3"></div>
+					<div class="frag frag4"></div>
+					<div class="frag frag5"></div>
+					<div class="frag frag6"></div>
+				</div>
+				<div class="img img5">
+					<div class="frag frag1"></div>
+					<div class="frag frag2"></div>
+					<div class="frag frag3"></div>
+					<div class="frag frag4"></div>
+					<div class="frag frag5"></div>
+					<div class="frag frag6"></div>
+				</div>
+				<div class="img img6">
+					<div class="frag frag1"></div>
+					<div class="frag frag2"></div>
+					<div class="frag frag3"></div>
+					<div class="frag frag4"></div>
+					<div class="frag frag5"></div>
+					<div class="frag frag6"></div>
+				</div>
+			</div> <!-- koniec slidera -->
+			<div class="side-controls">
+				<label for="slide1"></label>
+				<label for="slide2"></label>
+				<label for="slide3"></label>
+				<label for="slide4"></label>
+				<label for="slide5"></label>
+				<label for="slide6"></label>
+			</div>
+		</div>
+	</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<!-- logo文字描述 -->
+	<div class="logo_wen">
+		<div class="wel">
+			<img src="images/logo1.png">
+		</div>
+		
+	</div>
+
+	<div class="provide">
+		<div class="col-md-3 provide-left provide-one">
+			<h5>旅游攻略</h5>
+			<div id="bian">
+				<h3>巴厘岛</h3>
+				<p>海非常美丽，很有名的一个地方。超美的金色海滩，透明清澈的海水。游人如织啊，晚上非常的热闹。</p>
+			</div>
+			<div class="bnr-btn">
+			<a href="#" class="hvr-shutter-out-horizontal">Read More</a>
+		</div>
+		</div>
+		<div class="col-md-3 provide-left provide-two">
+			<h5>旅游攻略</h5>
+			<div id="bian1">
+				<h3>张家界</h3>
+				<p>张家界景色很美，门票有点贵，火车站建得太小气了，不过森林公园太赞了，它美妙得展现了大自然的美丽。</p>
+			</div>
+			<div class="bnr-btn">
+			<a href="#" class="hvr-shutter-out-horizontal">Read More</a>
+		</div>
+		</div>
+		<div class="col-md-3 provide-left provide-tre">
+
+			<h5>旅游攻略</h5>
+			<div id="bian2">
+			<h3>桂林天坑</h3>
+			<p>桂林天坑是溶洞与天坑相融合的地质奇观，目前是大桂林岩溶旅游景区中唯一能从底部步行进入的喀斯特漏斗。</p>
+			</div>
+			<div class="bnr-btn">
+			<a href="#" class="hvr-shutter-out-horizontal">Read More</a>
+		</div>
+		</div>
+		<div class="col-md-3 provide-left provide-four">
+			<h5>旅游攻略</h5>
+			<div id="bian3">
+			<h3>九寨沟</h3>
+			<p> 寨沟，因沟内有九个藏族寨子而得名。中国最美的水景，美丽的童话世界。在九寨沟内的藏族古寨里体验藏族风。</p>
+			</div>
+			<div class="bnr-btn">
+			<a href="#" class="hvr-shutter-out-horizontal">Read More</a>
+		</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+		 
+		<!--  旅游谈```推荐地方 -->
+	<div class="welcome-cen">
+		<div class="col-md-6 welcome-top">
+			<h3>十一小长假想好去哪嗨了吗？</h3>
+			<img src="images/new.png">
+			<h5>“放下许久的疲惫，享受一次全身心的放松之旅吧~”</h5><br>
+			<p>相传 古老的东北大地上有一条龙他的名字叫黑龙刚出生就被斩了尾四处游荡无家归听说北方江水白龙作怪蹭蹭蹭去交了战结果大败逃了难乡亲们 石灰石头整制齐扛的扛 挑的挑 扔...</p>
+			<div class="w-btn">
+				<a href="#" class="hvr-shutter-out-horizontal" id="huan">换一换</a>
+			</div>
+		</div>
+		<div class="col-md-6 welcome-right">
+			<img src="images/right1.png">
+			<h3>温馨小贴士</h3>
+			<div class="room">
+				<div id="scoll" >
+					<div id="room2">
+					<div id="div1">
+						<div class="imfor-port">
+						<p><a href="">1.第一天：机场 年初买了亚航促销的往返机票北京-科伦坡（吉隆坡中转）2200元左</a><span class="date">&nbsp;&nbsp;[07-11]</span>
+						</p>
+						</div>
+						<div class="imfor-port">
+						<p><a href="">2.西安 西安经典一日游传说骊山曾在此山炼石骊山老母殿位于陕西省西安市临</a><span class="date">&nbsp;&nbsp;[07-11]</span>
+						</p>
+						</div>
+						<div class="imfor-port">
+						<p><a href="">3.第一机票：年初买了亚航促销的往返机票北京-科伦坡（吉隆左</a><span class="date">&nbsp;&nbsp;[07-11]</span>
+						</p>
+						</div>
+						<div class="imfor-port">
+						<p><a href="">4.第一天：机场 第一天：路航促销的往返机票北京-科伦坡中转）2200元左</a><span class="date">&nbsp;&nbsp;[07-11]</span>
+						</p>
+						</div>
+						<div class="imfor-port">
+						<p><a href="">5.路上机票：年初买了亚航促销的往返机票北京-科伦坡（吉隆坡00元左
+						</a><span class="date">&nbsp;&nbsp;[07-11]</span>
+						</p>
+						</div>
+						<div class="imfor-port">
+						<p><a href="">6.路上机票：年初买了亚航促销的往返机票北京-科伦坡（吉隆坡00元左
+						</a><span class="date">&nbsp;&nbsp;[07-11]</span>
+						</p>
+						</div>
+					</div>
+					<div id="div2"> </div>	
+					</div>
+				</div>
+
+				<div class="room-bottom">
+					<h4>天气近况</h4>
+					<p>出行旅游天气最重要啊！</p>
+					<img src="images/tianqi.png">
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 welcome-bottom">
+			<div class="imgone">
+				<div class="demo ">
+				<img alt="example-image" id="img1" src="images/11.jpg">
+				</div>
+				<div class="pur pur1">
+					<h3>桂林</h3>
+					<p>一日游传说骊山曾在此山炼石骊山老母殿位于陕西省西安市</p>
+				</div>
+				<div class="demo ">
+				<img alt="example-image" id="img1" src="images/22.jpg">
+				</div>
+				<div class ="pur pur2">
+					<h3>啦啦</h3>
+					<p>一日游传说骊山曾在此山炼石骊山老母殿位于陕西省西安市</p>
+				</div>
+				<div class="demo ">
+				<img alt="example-image" id="img1" src="images/33.jpg">
+				</div>
+				<div class="pur pur3">
+					<h3>哈哈哈</h3>
+					<p>一日游传说骊山曾在此山炼石骊山老母殿位于陕西省西安市</p>
+				</div>
+			</div>
+			<div class="imgtwo">
+				<div class="demo">
+				<img alt="example-image" id="img1" src="images/44.jpg">
+				</div>
+				<div class="pur pur4" >
+					<h3>吼吼</h3>
+					<p>一日游传说骊山曾在此山炼石骊山老母殿位于陕西省西安市</p>
+				</div>
+
+				<div class="demo">
+				<img alt="example-image" id="img1" src="images/55.jpg">
+				</div>
+				<div class="pur pur5" >
+					<h3>风然</h3>
+					<p>一日游传说骊山曾在此山炼石骊山老母殿位于陕西省西安市</p>
+				</div>
+				
+				<div class="demo ">
+				<img alt="example-image" id="img1" src="images/66.jpg">
+				</div>
+				<div class="pur pur6" >
+					<h3>犬瘟热</h3>
+					<p>一日游传说骊山曾在此山炼石骊山老母殿位于陕西省西安市</p>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+
+	<div class="news">
+		<div class="container">
+			<div class="news-top">
+				<div class="col-md-8 news-left">
+					<div class="news-heading">
+						<h3>来看看各地大事！</h3>
+					</div>
+					<div class="news-bottom">
+						<h4>2016年网络安全宣传周大幕开启</h4>
+						<p>&nbsp;&nbsp;9月19日，“2016国家网络安全宣传周”开幕式暨先进典型表彰在武汉举行。这是国家网络安全宣传周主场活动首次在北京以外的城市举行。今年网络安全宣传周主题为“网络安全为人民，网络安全靠人民”，由中央网信办、教育部、工信部、公安部、新闻出版广电总局、共青团中央等六部门共同举办。</p>
+						<div class="news-one">
+							<div class="news-one-left">
+								<img src="images/n-1.jpg" alt="" />
+							</div>
+							<div class="news-one-right">
+								<h4>北京遭遇暴雨袭击事件， 西站积水有鱼冒出</h4>
+								<p>&nbsp;&nbsp;北京暴雨橙色预警，19日起，北京迎来今年入汛以来最强降雨过程，20日11时30分，北京市气象台发布了今年首个暴雨橙色预警。截至20日中午，公交、地铁、机场航班以及列车均受到不同程度影响。北京市排水集团也紧急启动最高级别防汛响应，出动防汛人员3000余人，应对雨情。市民尽量减少出行，司机注意 驾驶安全，以防发生 交通事故。<br>&nbsp;&nbsp;北京市气象局20日上午通报本轮降水与2012年“7.21”特大暴雨对比分析。市气象台台长乔林表示，本轮降水和“7 21”降水存在一定差异，主要是影响天气系统不同、对流性强弱不同、持续时间不同。
+
+2012年“7.21”影响系统为冷涡东移，此次为黄淮气旋北上;对流性方面，“7.21”对流性强，雨强大，达100.3毫米/小时，此次对流性偏弱，雨强相对较小，为56.8毫米/小时。</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="news-one">
+							<h4>北京连日暴雨 ， 居庸关长城护坡出现30米长滑坡</h4>
+							<p>&nbsp;&nbsp;据十三陵特区办事处一位负责人介绍，昨天居庸关长城处的瞬时雨量超过以往，下午2点左右，居庸关长城南关段的东侧护坡发生了滑坡，不是长城主体。坍塌滑坡处约30米长。到目前为止没有蔓延的消息。由于今天白天降雨还将持续，居庸关景区已经将现场封闭，并组织人力进行抢修。而靠近滑坡处的京藏高速，为了安全起见也封闭了三条车道中靠近滑坡点的两条车道。目前道路养护公司将会视情况采取围挡措施，确保该路段的通行安全。<br>&nbsp;&nbsp;在这里也提醒广大旅客，因为水害等原因造成停运的列车，三十天内可到车站窗口全额办理退票手续。网上购票的旅客，如果还没有换票，也可在三十天内登录12306网站直接办理退票手续</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 news-right">
+					<div class="news-heading">
+						<h3>榜首之位</h3>
+					</div>
+					<div class="news-btm">
+						<div class="news-1">
+							<img src="images/n-2.jpg" alt="" />
+							<div class="n-1">
+								<h5>黄山</h5>
+								<p>黄山归来不看岳，仿佛穿梭在人间与仙境。云海与日出很漂亮，天气好的时候光明顶上景色很美。</p>
+							</div>
+						</div>
+						<div class="news-1">
+							<img src="images/n-3.jpg" alt="" />
+							<div class="n-1">
+								<h5>太白山</h5>
+								<p>太白山横卧在宝鸡眉县、太白和西安周至3县境内。因山顶终年积雪，银光四射，故称太白。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+            <div class="footer-top ">
+                    <ul>
+                        <li><a href="#"><img src="images/icon1.png" alt=""/></a></li>
+                        <li><a href="#"><img src="images/icon2.png" alt=""/></a></li>
+                        <li><a href="#"><img src="images/icon3.png" alt=""/></a></li>
+                        <li><a href="#"><img src="images/icon4.png" alt=""/></a></li>
+                    </ul>
+            </div>
+                <div class="bottom-menu ">
+                    <ul>
+		                <li><a href="主页.html">主页</a>&nbsp;&nbsp;</li>
+					    <li><a href="raiders.html">旅游攻略</a>&nbsp;&nbsp;</li>
+					  	<li><a href="introduce.html">景点介绍</a>&nbsp;&nbsp;</li>
+						<li><a href="个人中心.html">个人中心</a>&nbsp;&nbsp;</li>
+					   	<li><a href="chatroom.html">在线交流</a>&nbsp;&nbsp;</li>
+                    </ul>
+                </div>
+           <div class="buttom-wen ">
+         		<p>Copyright © 2016 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+     		</div>
+	</div>
+
+		<div class="scroll">
+				<a href="javascript:;" id="login">登录</a>
+				<a href="javasrcript:;" id="reg">注册</a>
+			<a href="#home" id="toTop" class="#" style="display: block;">
+			<span id="toTopHover" style="opacity: 1;"> </span></a>
+		 </div>
+		 <script type="text/javascript">
+		 	jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+
+
+
+		 	var color = "blue";
+		 	function getcolor(){
+		 		return color;
+		 	}
+		 	alert(color);
+
+		 </script>
+	
+
+		
+
+
+</body>
+</html>
